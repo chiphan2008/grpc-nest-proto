@@ -23,6 +23,11 @@ message RegisterResponse {
   repeated string error = 2;
 }
 
+message TokenJson {
+  string accessToken = 1;
+  string refreshToken = 2;
+}
+
 // Login
 
 message LoginRequest {
@@ -33,13 +38,9 @@ message LoginRequest {
 message LoginResponse {
   int32 status = 1;
   repeated string error = 2;
-  tokenJson data = 3;
+  TokenJson data = 3;
 }
 
-message tokenJson {
-  string accessToken = 1;
-  string refreshToken = 2;
-}
 // accessToken, refreshToken
 // Validate
 
