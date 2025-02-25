@@ -9,7 +9,7 @@ service MarketingService {
 message CreateMarketingRequest {
   int32 productId = 1;
   int32 quantity = 2;
-  int32 userId = 3;
+  int32 id = 3;
 }
 
 message CreateMarketingResponse {
